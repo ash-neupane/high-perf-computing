@@ -66,7 +66,7 @@ void print_matrix(const matrix* m) {
   printf("------------\n");
   for (int i = 0; i < m->rows; i++) {
     for (int j = 0; j < m->cols; j++) {
-      printf("  %3d  ", m->values[i][j]);
+      printf("  %d  ", m->values[i][j]);
     }
     printf("\n");
   }
@@ -76,6 +76,7 @@ void print_matrix(const matrix* m) {
 
 // Multiply matrix A*B, store result in C.
 int matrix_multiply_run(const matrix* A, const matrix* B, matrix* C) {
+  sleep(10);  // Sleeps for 10 seconds
   tbassert(A->cols == B->rows,
            "A->cols = %d, B->rows = %d\n", A->cols, B->rows);
   tbassert(A->rows == C->rows,
