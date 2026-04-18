@@ -55,3 +55,24 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Profiler outputs
+*.nvvp
+*.ncu-rep
+*.qdrep
+*.qdstrm
+*.sqlite
+perf.data*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Secrets / env
+.env
+.env.*
